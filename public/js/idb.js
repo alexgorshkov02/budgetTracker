@@ -74,7 +74,6 @@ function uploadBudget() {
           budgetObjectStore.clear();
 
           alert("All saved budget has been submitted!");
-        //   window.location.reload();
         })
         .catch((err) => {
           console.log(err);

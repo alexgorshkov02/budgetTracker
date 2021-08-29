@@ -9,7 +9,7 @@ fetch("/api/transaction")
     // save db data on global variable
     transactions = data;
 
-    // if data exists in Index DB
+    // if there is no connection, check any data exists in Index DB
     if (!navigator.onLine) {
       // open a transaction on your db
       const transaction = db.transaction(["new_budget"], "readwrite");
